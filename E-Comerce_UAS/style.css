@@ -1,0 +1,315 @@
+:root {
+    --pink:#e84399;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(225,51,153,.05);
+}
+
+.heading span {
+    color: var(--pink);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: black;
+    color: rgb(255, 230, 247);
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: all .5s ease 0s;
+}
+
+.btn:hover {
+    background-color: var(--pink);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo img 
+{   
+    height:6rem;
+}
+
+
+header .logo {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;   
+}
+
+header .logo span {
+    color: var(--pink);
+}
+
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;  
+}
+
+header .navbar a:hover {
+    color: var(--pink);
+    transition: all .5s ease 0s;
+}
+
+header .icons a {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 2.3rem;
+}
+
+header .icons a:hover {
+    color: var(--pink);  
+    transition: all .3s ease 0s; 
+}
+
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(255, 230, 247) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 50rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: #333;
+}
+
+.home .content span {
+    font-size: 3.5rem;
+    color: var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home {
+    background-position: center;
+}
+
+.home .content h3 {
+    font-size: 5rem;
+}
+
+.home .content span {
+    font-size: 2.5rem;
+}
+
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    header {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+    }
+
+    header .navbar a {
+        margin: 1.5rem;  
+        padding: 1.5rem;
+        background: #eee;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }   
+}
+
+@media (max-width: 450) {
+    html {
+        font-size: 50%;
+    }
+
+    heading {
+        font-size: 3rem;
+    }
+}
+
+
+.contact
+{
+    padding-top:8.5rem;
+}
+.cake-contact
+{
+    width:100%;
+    background:whitesmoke;
+}
+.cake-contact-row
+{   
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+}
+.cake-contact-col 
+{
+    margin:2rem;
+    flex: 1 1 20rem;
+    text-align:center;
+}
+.cake-contact-col .images 
+{
+    border:1px solid #fff;
+}
+.cake-contact-col img
+{
+    width:90%;
+    height:auto;
+    margin:1.5rem;
+    padding:1rem;
+    flex:1 1 21rem;
+    border:1px solid transparent;
+    border-radius: 1rem;   
+}
+.cake-contact-col h1 
+{
+    padding:1rem 0;
+    color:rgb(236, 35, 119);
+    letter-spacing: .1rem;
+}
+.cake-contact-col .social i
+{
+    padding:.8rem;
+    border: none;
+    border-radius: 1rem;
+    background:rgb(236, 35, 119);
+    color:#fff;
+    font-size: 1.5rem;
+}
+.cake-contact-col .social i:hover 
+{
+    transition: 0.5s ease;
+    background: #666;  
+    color:#fff;
+    cursor: pointer;
+}
+.cake-contact-col p 
+{
+    padding:.5rem 0;
+    line-height:1.5rem;
+    color:gray;
+}
+.cake-contact-col input, .cake-contact-col textarea 
+{
+    width:80%;
+    padding:1rem;
+    margin-bottom:1.2rem;
+    border:none;
+    border-bottom:.1rem dotted rgb(236, 35, 119);  
+}
+.cake-contact-col textarea
+{
+    resize: none;
+}
+.copyright
+{
+    margin-top:5rem;
+    padding:3rem;
+    text-align:center;
+    background: gray;
+}
+.copyright i 
+{
+    font-size:2rem;
+    color:#fff;
+}
+.copyright p 
+{
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    color:#fff;
+}
+
+.btn-cta {
+	margin-right: 10px;
+	border: none;
+	font-size: 20px;
+	padding: 6px 12px;
+	background: rgb(236, 35, 119);
+	color: #eaeaea;
+	border-radius: 8px;
+	cursor: pointer;
+}
